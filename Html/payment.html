@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="payme.css"></linkreel>
+  </head>
+  <body>
+    <a>Payment Gateway</a>
+  </body>
+  <style>
+    a{
+        animation: bouncing 0.5s ease 0s infinite  alternate-reverse;
+        background: darkblue;
+        border-radius: 50%;
+        display: inline-block;
+        color:white;
+        /* cursor:pointer; */
+        font-size: 0.75rem;
+        font-weight:300;
+        letter-spacing:0.2em;
+        padding: 1em 2em 1.1em;
+        position:relative;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    @keyframes bouncing{
+        0%{
+            bottom: 0px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        }
+
+        40%{
+            bottom: 50px;
+            box-shadow: 0 50 5px rgba(9, 212, 195, 0.5);
+        }
+
+        75%{
+            bottom: 100px;
+            box-shadow: 0 0 5px rgba(94, 44, 212, 0.5);
+        }
+
+        100%{
+            bottom: 150px;
+            box-shadow: 0 50px 50px rgba(225, 10, 10, 0.5);
+        }
+
+
+    }
+  </style>
+    <form action="">
+        <body>
+            <div class="container">
+        <h1 class="main_heading">Payment Form</h1>
+        <h2>User Details-- </h2>
+        <p>*Name: <input type="text" name="name" required placeholder="rahul"></p>
+        <fieldset>
+            <legend>*Gender required</legend>
+            <p>
+                Male<input type="radio" name="gender" id="Male" required>
+                Female<input type="radio" name="gender" id="Female" required>
+                 </p>
+
+                
+        </fieldset>
+        <img align="right" src="paisaa.jpg" width="190px" >
+        <p>*College Name: <input type="text" name="College"required placeholder="IIT/NIT/KIIT/VIT...."></p>
+        <p>*Course: <input type="text" name="course"required placeholder="Btech/Bca/bsc"></p>
+        <p>Branch: <input type="text" name="branch"  placeholder="Cse/Mechanical/Electrical/Electronics"></p>
+        <p>*Year(currently Studying)</p>
+        <p>
+            1st Year<input type="radio" name="Year" id="first">
+            <br>
+            2nd Year<input type="radio" name="Year" id="second">
+            <br>
+            3rd Year<input type="radio" name="Year" id="third">
+            <br>
+            4th Year<input type="radio" name="Year" id="Fourth">
+            <br>
+        </p>
+        <h2>Payment Details</h1>
+            <p>*Card type: 
+            <select name="Card type" required id="card type">
+                <option value="">---Select a card type---</option>
+                <option value="visa">Visa</option>
+                <option value="rupay">Rupay</option>
+                <option value="mastercard">Mastercard</option>
+                
+            </select>
+        </p>
+        <p>
+            *Card Number <input type="number" required name="card_number" id="card_number"required>
+        </p>
+
+        <p>
+            *Expiration Date<input type="date" required name="exp_date" id="exp_date"required>
+        </p>
+
+        <p>
+            *CVV<input type="password" required name="cvv" id="cvv"required>
+        </p>
+        <input type="submit" value="Pay Now">
+    </form>
+</div>
+</body>
+ 
+</html>
